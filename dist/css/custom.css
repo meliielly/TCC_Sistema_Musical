@@ -5,7 +5,6 @@ html {
 
 body {
   background: url(../assets/footer-bg.png) no-repeat center bottom;
-  padding-bottom: 400px;
 }
 
 #header {
@@ -274,4 +273,8 @@ body {
 
 #contato ul li img {
   max-height: 20px;
+}
+
+.modulo-box {
+  height: 400px;
 }
