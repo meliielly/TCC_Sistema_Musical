@@ -30,12 +30,12 @@ h2 {
 }
 
 .nowplaying {
-  font-size: 120px;
+  font-size: 20px;
   line-height: 1;
   color: black;
   text-shadow: 0 0 5rem #028ae9;
   transition: all 0.07s ease;
-  min-height: 120px;
+  min-height: 20px;
 }
 
 .keys {
