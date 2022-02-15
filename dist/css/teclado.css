@@ -6,15 +6,6 @@ main {
   width: 100%;
 }
 
-h1 {
-  color: #fff;
-  font-size: 50px;
-  font-weight: 400;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  margin: 0;
-}
-
 h2 {
   color: #fff;
   font-size: 14px;
@@ -23,11 +14,6 @@ h2 {
   margin: 0 0 30px;
 }
 
-.imagem{
-    display: flex;
-    align-items: center;
-    justify-self: center;
-}
 
 .nowplaying {
   font-size: 20px;
@@ -65,15 +51,17 @@ h2 {
   background: rgba(255, 255, 255, 0.8);
 }
 
+
 .key.sharp {
   position: absolute;
-  width: 50px;
-  height: 210px;
+  width: 6%;
+  height: 60%;
   background: #000;
   color: #eee;
   top: 0;
   z-index: 3;
 }
+
 
 .key[data-key="87"] {
   left: 7%;
@@ -103,6 +91,61 @@ h2 {
   left: 87%;
 }
 
+
+
+.teclado .key{
+  border: 3px solid black;
+  border-radius: 0.4rem;
+}
+
+.teclado .hints {
+  font-size: 16px;
+}
+
+.teclado .keys{
+  width: 350px;
+  height: 125px;
+}
+
+.teclado .key:not(.sharp){
+  width: 10%;
+  height: 95%;
+}
+
+.teclado .key.sharp{
+  width: 5%;
+  height: 60%;
+}
+
+.teclado .key[data-key="87"] {
+  left: 7.5%;
+}
+
+.teclado .key[data-key="69"] {
+  left: 17.5%;
+}
+
+.teclado .key[data-key="84"]  {
+  left: 37.5%;
+}
+
+.teclado .key[data-key="89"] {
+  left: 47.5%;
+}
+
+.teclado .key[data-key="85"] {
+  left: 57.5%;    
+}
+
+.teclado .key[data-key="79"] {
+  left: 77.5%;    
+}
+
+.teclado .key[data-key="80"] {
+  left: 87.5%;    
+}
+
+
 .playing {
   transform: scale(0.95);
   border-color: #028ae9;
@@ -111,11 +154,12 @@ h2 {
 
 .hints {
   display: block;
-  width: 100%;
   position: absolute;
   bottom: 7px;
   transition: opacity 0.3s ease-out;
   font-size: 20px;
 }
+
+
 
 /*fonte: https://codepen.io/gabrielcarol/pen/rGeEbY
