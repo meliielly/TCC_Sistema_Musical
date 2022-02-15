@@ -1,69 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/forms.css" />
-    <title>Estudos Musicais</title>
-  </head>
-  <body>
-    <div class="form-bg">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6">
-            <div class="form-container">
-              <h3 class="title">Logar</h3>
-              <ul class="social-links">
-                <li>
-                  <a href=""><i class="fab fa-google"></i></a>
-                </li>
-                <li>
-                  <a href=""><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li>
-                  <a href=""><i class="fab fa-twitter"></i></a>
-                </li>
-              </ul>
-              <span class="description">Informe seu email</span>
-              <form class="form-horizontal">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Name" />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Email"
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="password"
-                    class="form-control"
-                    placeholder="Password"
-                  />
-                </div>
-                <div class="form-group">
-                  <input type="checkbox" class="checkbox" />
-                  <span class="check-label"
-                    >I agree to the <a href="">Terms</a> and
-                    <a href="">Privacy Policy.</a></span
-                  >
-                </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/forms.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
 
-                <a
-                  href="../index.html"
-                  class="btn signup btn-primary button button-primary"
-                  >Start</a
-                >
+  <link rel="stylesheet" href="../css/owl/owl.carousel.min.css" />
+  <link rel="stylesheet" href="../css/owl/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="../css/magnific-popup.css" />
+  <title>~</title>
+</head>
+<body>
+  <main class="form-container">
+    <div class="form-container">
+      <h3 class="title texto-login">Login</h3>
+      <h3 class="title texto-cadastro">Cadastro</h3>
 
-                
-              </form>
-            </div>
-          </div>
+      <form class="form-horizontal">
+        <span class="titulo-email description">Email</span>
+        <div class="form-group">
+          <input type="email" class="form-control input-field field-email" placeholder="Nome" />
         </div>
-      </div>
+
+        <span class="titulo-nome description">Nome</span>
+        <div class="form-group">
+          <input type="text" class="form-control input-field field-nome" placeholder="Nome" />
+        </div>
+        
+        <span class="titulo-senha description">Senha</span>
+        <div class="form-group">
+          <input type="password" class="form-control input-field field-senha" placeholder="Senha" />
+        </div>
+
+        <span class="titulo-confirmar-senha description">Confirmar senha</span>
+        <div class="form-group">
+          <input type="password" class="form-control input-field field-confirmar-senha" placeholder="Confirmar senha" />
+        </div>
+        
+        <button type="button" class="botao-cadastrar btn btn-light button mb-3 d-md-inline d-block w-100">Cadastrar</button>
+        <button type="button" class="botao-entrar btn btn-light button mb-3 d-md-inline d-block w-100" onClick="acessarMenu();">Entrar</button>
+        
+        <p class="att att-entrar" onclick="atualizarPagina('entrar')">Já possui conta? Fazer login.</p>
+        <p class="att att-cadastrar" onclick="atualizarPagina('cadastrar')">Não possui conta? Fazer cadastro.</p>  
+      </form>
+      
+      
     </div>
-  </body>
+  </main>
+
+
+  <script src="../js/login.js"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0../../umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"
+  ></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../js/owl.carousel.min.js"></script>
+  <script src="../js/isotope.pkgd.min.js"></script>
+  <script src="../js/magnify/jquery.magnific-popup.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
 </html>
