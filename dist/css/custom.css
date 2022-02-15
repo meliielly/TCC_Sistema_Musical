@@ -209,7 +209,7 @@ body {
   font-weight: 700;
 }
 
-#contato .email {
+#contato .login-box {
   border-radius: 5px;
   background-color: var(--secondary);
   color: #fff;
@@ -221,19 +221,19 @@ body {
   padding: 120px 30px;
 }
 
-#contato .email img {
+#contato .login-box img {
   position: absolute;
   left: 30px;
   top: -30px;
 }
 
-#contato .email form {
+#contato .login-box form {
   width: 60%;
   display: flex;
 }
 
-#contato .email .form-control,
-#contato .email .form-control::placeholder {
+#contato .login-box .form-control,
+#contato .login-box .form-control::placeholder {
   background: none;
   color: #fff;
 }

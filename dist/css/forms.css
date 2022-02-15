@@ -1,3 +1,7 @@
+.form-horizontal{
+  width: 200px;
+}
+
 .form-horizontal p{
   width: fit-content;
   height: auto;
@@ -7,7 +11,7 @@
 }
 
 .form-horizontal p:hover{
-  color:#4e4c97;
+  color:#364f6b;
   text-decoration: underline;
 }
 
@@ -27,7 +31,7 @@
 .form-container:before,
 .form-container:after {
   content: "";
-  background-color: #4e4c97;
+  background-color: #364f6b;
   height: 50%;
   width: 4px;
   left: 10px;
@@ -40,7 +44,7 @@
   right: 10px;
 }
 .form-container .title {
-  color: #4e4c97;
+  color: #364f6b;
   font-size: 25px;
   font-weight: 700;
   text-transform: capitalize;
@@ -66,11 +70,10 @@
   margin: 0 0 15px;
 }
 .form-horizontal .form-group:last-of-type {
-  text-align: left;
   margin-bottom: 35px;
 }
 .form-horizontal .form-control {
-  color: #4e4c97;
+  color: #364f6b;
   background: #f7f8f9;
   font-size: 14px;
   font-weight: 500;
@@ -90,44 +93,34 @@
   font-size: 14px;
   font-weight: 300;
 }
-.form-horizontal .form-group .check-label {
-  color: #555;
-  font-size: 12px;
-  font-weight: 400;
-  text-transform: none;
-  margin: -2.5px 0 0;
-  vertical-align: text-top;
-  display: inline-block;
-}
 
 
 .form-horizontal .btn {
   color: #fff;
-  background-color: #4e4c97;
+  background-color: #364f6b;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: capitalize;
-  width: 130px;
+  width: 100%;
   padding: 11px;
-  margin: 0 10px 10px 0;
-  border: 2px solid #4e4c97;
+  border: 2px solid #364f6b;
   border-radius: 15px;
   display: inline-block;
   transition: all 0.3s ease 0s;
 }
 .form-horizontal .btn.signin {
-  color: #4e4c97;
+  color: #364f6b;
   background-color: #fff;
 }
 .form-horizontal .btn:hover,
 .form-horizontal .btn:focus {
-  color: #4e4c97;
+  color: #364f6b;
   background-color: #fff;
-  box-shadow: 0 0 5px #4e4c97, 0 0 15px #4e4c97 inset;
+  box-shadow: 0 0 5px #364f6b, 0 0 15px #364f6b inset;
 }
 .form-horizontal .btn.signin:hover,
 .form-horizontal .btn.signin:focus {
   text-shadow: 3px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5px #4e4c97;
+  box-shadow: 0 0 5px #364f6b;
 }
