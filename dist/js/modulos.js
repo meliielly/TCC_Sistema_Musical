@@ -1,27 +1,73 @@
-let pagAtual = document.querySelector(".atual");
+let pagAtual;
+let numPagAtual;
+let btAvancar = document.querySelector(".bt-avancar");
+let btVoltar = document.querySelector(".bt-voltar");
+let paginas = document.querySelectorAll(".page");
+
+function verificarBotao() {
+  let i = 0;
+  
+  for(i; i < paginas.length; i++){
+    if(paginas[i].classList.contains("atual")){
+      numPagAtual = i;
+    }
+  }
+
+  if(i == 0){
+    btVoltar.style.display = "none";
+  }else {
+    btVoltar.style.display = "block";
+  }
+  if(i == paginas.length - 1){
+    btAvancar.style.display = "none";
+  }else{
+    btAvancar.style.display = "block";
+  }
+}
 
 function verificarPagina() {
-  pagAtual.style.display = "block";
+  paginas.forEach(pagina => {
+    if(pagina.classList.contains("atual")){
+      pagina.style.display = "block";
+    }else{
+      pagina.style.display = "none";
+    }
+  });
 }
 
-function avancarPagina(i) {
-  pagAtual.classList.remove("atual");
-  pagAtual.style.display = "none";
-  if (pagAtual.classList.contains(`pag-${i}`)) {
-    pagAtual = document.querySelector(`.pag-${i + 1}`);
-    console.log(pagAtual);
-  }
+btAvancar.addEventListener("click", function(){
 
+  verificarBotao();
+
+  let verificarPag = 0;
+  let cont = 0;
+
+  paginas.forEach(pagina => {
+    if(pagina.classList.contains("atual")){
+      pagina.classList.remove("atual");
+      pagAtual = pagina;
+      verificarPag = cont;
+    }
+    cont++;
+  });
+  console.log(verificarPag);
+  paginas[verificarPag+1].classList.add("atual");
   verificarPagina();
-}
+})
 
-function voltarPagina(i) {
-  pagAtual.classList.remove("atual");
-  pagAtual.style.display = "none";
-  if (pagAtual.classList.contains(`pag-${i}`)) {
-    pagAtual = document.querySelector(`.pag-${i - 1}`);
-    console.log(pagAtual);
-  }
+btVoltar.addEventListener("click", function(){
 
+  let verificarPag = 0;
+  let cont = 0;
+
+  paginas.forEach(pagina => {
+    if(pagina.classList.contains("atual")){
+      pagina.classList.remove("atual");
+      pagAtual = pagina;
+      verificarPag = cont;
+    }
+    cont++;
+  });
+  paginas[verificarPag-1].classList.add("atual");
   verificarPagina();
-}
+})
