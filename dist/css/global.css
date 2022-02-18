@@ -12,6 +12,7 @@ h6 {
   font-weight: 700;
 }
 
+
 a {
   color: var(--primary);
 }
@@ -68,3 +69,4 @@ a:hover {
 .owl-theme .owl-dots .owl-dot:hover span {
   background: var(--primary);
 }
+
