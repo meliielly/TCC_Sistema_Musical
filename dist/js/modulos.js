@@ -4,30 +4,43 @@ let btAvancar = document.querySelector(".bt-avancar");
 let btVoltar = document.querySelector(".bt-voltar");
 let paginas = document.querySelectorAll(".page");
 
-function verificarBotao() {
-  let i = 0;
-  
-  for(i; i < paginas.length; i++){
-    if(paginas[i].classList.contains("atual")){
-      numPagAtual = i;
-    }
-  }
+document.addEventListener("DOMContentLoaded", function() {
+  verificarPagina();
+});
 
-  if(i == 0){
-    btVoltar.style.display = "none";
-  }else {
-    btVoltar.style.display = "block";
-  }
-  if(i == paginas.length - 1){
-    btAvancar.style.display = "none";
-  }else{
-    btAvancar.style.display = "block";
-  }
+function verificarBotao() {
+  
+  paginas.forEach(pagina => {
+
+    if(pagina.classList.contains(`atual`)){
+      if(pagina.classList.contains(`page-1`)){      
+        btVoltar.style.visibility = "hidden";
+      }else{     
+        btVoltar.style.visibility = "visible";
+      }    
+
+      if(pagina.classList.contains(`page-${paginas.length}`)){
+        btAvancar.style.visibility = "hidden";
+      }else{
+        btAvancar.style.visibility = "visible";
+      }
+    }
+  });  
 }
 
 function verificarPagina() {
+
+  window.scroll({
+    top: 0, 
+    left: 0, 
+    behavior: 'smooth' 
+  });
+
+  verificarBotao();
+
   paginas.forEach(pagina => {
     if(pagina.classList.contains("atual")){
+      
       pagina.style.display = "block";
     }else{
       pagina.style.display = "none";
@@ -37,21 +50,19 @@ function verificarPagina() {
 
 btAvancar.addEventListener("click", function(){
 
-  verificarBotao();
-
   let verificarPag = 0;
   let cont = 0;
 
   paginas.forEach(pagina => {
+    cont++;
     if(pagina.classList.contains("atual")){
       pagina.classList.remove("atual");
       pagAtual = pagina;
       verificarPag = cont;
     }
-    cont++;
   });
-  console.log(verificarPag);
-  paginas[verificarPag+1].classList.add("atual");
+  paginas[verificarPag].classList.add("atual");
+  
   verificarPagina();
 })
 
@@ -61,13 +72,15 @@ btVoltar.addEventListener("click", function(){
   let cont = 0;
 
   paginas.forEach(pagina => {
+
+    cont++;
     if(pagina.classList.contains("atual")){
       pagina.classList.remove("atual");
       pagAtual = pagina;
       verificarPag = cont;
     }
-    cont++;
   });
-  paginas[verificarPag-1].classList.add("atual");
+  paginas[verificarPag-2].classList.add("atual");
+
   verificarPagina();
 })
