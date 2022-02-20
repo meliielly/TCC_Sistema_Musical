@@ -2,15 +2,23 @@ body {
   font-size: 20px;
   font-family: sans-serif;
   color: #333;
-
 }
 .question {
   font-weight: 600;
 }
 .answers {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-#container_exercicio {
+#exercicio {
   text-align: justify;
+  margin-left: 90px;
+}
+
+#results{
+  text-align: justify;
+  margin-left: 160px;
+  font-size: 25px;
+  font-family:'Times New Roman', Times, serif;
+ 
 }
