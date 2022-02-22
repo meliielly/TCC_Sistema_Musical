@@ -2,7 +2,8 @@ let pagAtual;
 let numPagAtual;
 let btAvancar = document.querySelector(".bt-avancar");
 let btVoltar = document.querySelector(".bt-voltar");
-let btVerificar = document.querySelector(".bt-verificar");
+let btVerificar = document.querySelectorAll(".bt-verificar");
+let btVerificarAtual = null;
 let paginas = document.querySelectorAll(".page");
 let alternativasAtual = new Array();
 let exercicios = document.querySelectorAll(".exercicio");
@@ -28,13 +29,52 @@ function verificarBotao() {
       }
     }
   });
+
+  verificarBotaoAtual();
+}
+
+function verificarBotaoAtual() {
+  paginas.forEach(pagina => {
+    if (pagina.classList.contains("exercicio")) {
+      btVerificar.forEach(botao => {
+        if (botao.parentElement.classList.contains("atual")) {
+          btVerificarAtual = botao;
+        }
+      });
+
+      if (btVerificarAtual != undefined) {
+        btVerificarAtual.addEventListener("click", function() {
+          alternativasAtual.forEach(a => {
+            if (a.checked) {
+              textoResposta.style.display = "block";
+              a.parentElement.classList.add("selecionada");
+              if (a.classList.contains("correta")) {
+                textoResposta.textContent = "Parabéns!";
+              } else {
+                textoResposta.textContent = "Poxa!";
+              }
+            }
+            a.disabled = true;
+            btVerificarAtual.disabled = true;
+            btAvancar.disabled = false;
+            btAvancar.classList.add("btn-outline-primary");
+            btAvancar.classList.remove("desabilitado");
+            a.parentElement.parentElement.parentElement.classList.add(
+              "concluido"
+            );
+            mostrarReposta();
+          });
+        });
+      }
+    }
+  });
 }
 
 function salvarAlternativas() {
   let i = 0;
 
   exercicios.forEach(exercicio => {
-    i = +1;
+    i++;
 
     if (
       exercicio.classList.contains("atual") &&
@@ -44,33 +84,14 @@ function salvarAlternativas() {
     }
   });
 
+  console.log(alternativasAtual);
+
   alternativasAtual.forEach(a => {
     a.addEventListener("click", function() {
-      btVerificar.disabled = false;
+      btVerificarAtual.disabled = false;
     });
   });
 }
-
-btVerificar.addEventListener("click", function() {
-  alternativasAtual.forEach(a => {
-    if (a.checked) {
-      textoResposta.style.display = "block";
-      a.parentElement.classList.add("selecionada");
-      if (a.classList.contains("correta")) {
-        textoResposta.textContent = "Parabéns!";
-      } else {
-        textoResposta.textContent = "Poxa!";
-      }
-    }
-    a.disabled = true;
-    btVerificar.disabled = true;
-    btAvancar.disabled = false;
-    btAvancar.classList.add("btn-outline-primary");
-    btAvancar.classList.remove("desabilitado");
-    a.parentElement.parentElement.parentElement.classList.add("concluido");
-    mostrarReposta();
-  });
-});
 
 function mostrarReposta() {
   alternativasAtual.forEach(a => {
@@ -93,14 +114,11 @@ function verificarPagina() {
 
   paginas.forEach(pagina => {
     if (pagina.classList.contains("atual")) {
-      if (
-        pagina.classList.contains("exercicio") &&
-        !pagina.classList.contains("concluido")
-      ) {
+      if (pagina.classList.contains("exercicio") == true &&
+      !pagina.classList.contains("concluido") == true) {
         btAvancar.disabled = true;
         btAvancar.classList.remove("btn-outline-primary");
         btAvancar.classList.add("desabilitado");
-
         salvarAlternativas();
       } else {
         btAvancar.disabled = false;
@@ -148,3 +166,8 @@ btVoltar.addEventListener("click", function() {
 
   verificarPagina();
 });
+
+function playAudio(link) {
+  var audio = new Audio(link);
+  audio.play();
+}

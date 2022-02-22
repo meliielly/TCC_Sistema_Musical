@@ -200,7 +200,7 @@
 
         <div class="col-8">
           <h1>Módulo 1</h1>
-          <div class="page-1 page">
+          <div class="page-1 atual page">
             <iframe
               width="560"
               height="315"
@@ -246,7 +246,7 @@
             </div>
           </div>
 
-          <div class="exercicio ex-1 page-3 atual page">
+          <div class="exercicio ex-1 page-3 page" style="display: none">
             <h4 class="enunciado">O que é Pauta ou Pentagrama?</h4>
             <div class="row alternativas alternativas-ex-1">
               <label class="mb-2">
@@ -276,7 +276,7 @@
 
                 É onde escrevemos a notas
               </label>
-              <label class="mb-2"> 
+              <label class="mb-2">
                 <input
                   class="incorreta alternativa-ex-1"
                   type="radio"
@@ -337,7 +337,57 @@
             <img src="../../assets/aux_conteudo/clave-de-do.webp" alt="" />
           </div>
 
-          <div class="exercicio ex-2 page-5 page"></div>
+          <div class="exercicio ex-2 page-5 page" style="display: none">
+            <h4 class="enunciado">qual das notas a seguir é mais aguda?</h4>
+            <div class="alternativas alternativas-ex-2">
+              <button
+                onclick="playAudio(`http://carolinegabriel.com/demo/js-keyboard/sounds/048.wav`);"
+              >
+                <input class="incorreta alternativa-ex-2" type="radio"  name="botao-som" id="" />
+                Sol
+              </button>
+              <button
+                onclick="playAudio(`http://carolinegabriel.com/demo/js-keyboard/sounds/045.wav`);"
+              >
+                <input class="incorreta alternativa-ex-2" type="radio" name="botao-som" id="" />
+
+                Fá
+              </button>
+              <button
+                onclick="playAudio(`http://carolinegabriel.com/demo/js-keyboard/sounds/044.wav`);"
+              >
+                <input class="incorreta alternativa-ex-2" type="radio" name="botao-som" id="" />
+
+                Mi
+              </button>
+              <button
+                onclick="playAudio(`http://carolinegabriel.com/demo/js-keyboard/sounds/040.wav`);"
+              >
+                <input class="incorreta alternativa-ex-2" type="radio" name="botao-som" id="" />
+
+                Dó
+              </button>
+              <button
+                onclick="playAudio(`http://carolinegabriel.com/demo/js-keyboard/sounds/056.wav`);"
+              >
+                <input class="correta alternativa-ex-2" type="radio" name="botao-som" id="" />
+
+                Mi
+              </button>
+              <button
+                onclick="playAudio(`http://carolinegabriel.com/demo/js-keyboard/sounds/054.wav`);"
+              >
+                <input class="incorreta alternativa-ex-2"type="radio" name="botao-som" id="" />
+
+                Ré
+              </button>
+            </div>
+            <button class="bt-verificar" disabled>Verificar</button>
+
+            <div class="texto-resposta" style="display: none;">
+              <label>sadasd</label>
+            </div>
+          </div>
 
           <div class="page-6 page" style="display: none">
             <h4 class="mb-4 mt-4">
