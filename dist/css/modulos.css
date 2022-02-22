@@ -2,3 +2,12 @@
     right: 0;
     width: fit-content;
 }
+
+.desabilitado {
+    color: grey;
+    border-color: grey;
+}
+
+.selecionada {
+    border: 3px solid black;
+}
