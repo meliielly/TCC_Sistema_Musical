@@ -1,516 +1,447 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="../../css/owl/owl.carousel.min.css" />
-    <link rel="stylesheet" href="../../css/owl/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="../../css/magnific-popup.css" />
-    <link rel="stylesheet" href="../../css/main.css" />
-    <link rel="stylesheet" href="../../css/teclado.css" />
-    <link rel="stylesheet" href="../../css/modulos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
 
-    <title>Estudos Musicais</title>
-  </head>
-  <body>
-    <!--HEADER-->
-    <div id="header">
-      <div class="container">
-        <nav
-          class="navbar navbar-expand-lg navbar-light justify-content-between"
-        >
-          <a class="navbar-brand" href="#">
-            <img src="../../assets/images/telado.png" class="logo" width="50" />
-          </a>
+  <link rel="stylesheet" href="../../css/owl/owl.carousel.min.css" />
+  <link rel="stylesheet" href="../../css/owl/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="../../css/magnific-popup.css" />
+  <link rel="stylesheet" href="../../css/main.css" />
+  <link rel="stylesheet" href="../../css/teclado.css" />
+  <link rel="stylesheet" href="../../css/modulos.css" />
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="../../index.html"
-                  >Página Inicial</a
-                >
-              </li>
+  <title>Estudos Musicais</title>
+</head>
 
-              <li class="nav-item">
-                <a class="nav-link" href="../../index.html#servicos">Módulos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../teclado.html">Teclado Virtual</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../perfil.html">Perfil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../links.html">Vídeos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../sobre.html">Sobre</a>
+<body>
+  <!--HEADER-->
+  <div id="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+        <a class="navbar-brand" href="#">
+          <img src="../../assets/images/telado.png" class="logo" width="50" />
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="../../index.html">Página Inicial</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html#servicos">Módulos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../teclado.html">Teclado Virtual</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../perfil.html">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../links.html">Vídeos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../sobre.html">Sobre</a>
+            </li>
+            <li>
+              <a class="nav-link text-danger" href="../pages/login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!--//HEADER-->
+
+  <!--SLIDER-->
+  <div id="slider" class="block">
+    <div class="container pt-5">
+      <div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-md-0 mb-4 row">
+          <h4 class="mb-4 mt-4">Pauta ou Pentagrama</h4>
+          <div id="main" class="p-5 teclado position-fixed col-8">
+            <div class="nowplaying"></div>
+            <div class="keys p-0 m-0">
+              <div data-key="65" class="key" data-note="C (dó)">
+                <span class="hints">A</span>
+              </div>
+              <div data-key="87" class="key sharp" data-note="C# (dó#)">
+                <span class="hints">W</span>
+              </div>
+              <div data-key="83" class="key" data-note="D (ré)">
+                <span class="hints">S</span>
+              </div>
+              <div data-key="69" class="key sharp" data-note="D# (ré#)">
+                <span class="hints">E</span>
+              </div>
+              <div data-key="68" class="key" data-note="E (mi)">
+                <span class="hints">D</span>
+              </div>
+              <div data-key="70" class="key" data-note="F (fa)">
+                <span class="hints">F</span>
+              </div>
+              <div data-key="84" class="key sharp" data-note="F# (fa#)">
+                <span class="hints">T</span>
+              </div>
+              <div data-key="71" class="key" data-note="G (sol)">
+                <span class="hints">G</span>
+              </div>
+              <div data-key="89" class="key sharp" data-note="G# (sol#)">
+                <span class="hints">Y</span>
+              </div>
+              <div data-key="72" class="key" data-note="A (lá)">
+                <span class="hints">H</span>
+              </div>
+              <div data-key="85" class="key sharp" data-note="A# (lá#)">
+                <span class="hints">U</span>
+              </div>
+              <div data-key="74" class="key" data-note="B (si)">
+                <span class="hints">J</span>
+              </div>
+              <div data-key="75" class="key" data-note="C (dó)">
+                <span class="hints">K</span>
+              </div>
+              <div data-key="79" class="key sharp" data-note="C# (dó#)">
+                <span class="hints">O</span>
+              </div>
+              <div data-key="76" class="key" data-note="D (ré)">
+                <span class="hints">L</span>
+              </div>
+              <div data-key="80" class="key sharp" data-note="D# (ré#)">
+                <span class="hints">P</span>
+              </div>
+              <div data-key="186" class="key" data-note="E (mi)">
+                <span class="hints">Ç</span>
+              </div>
+            </div>
+
+            <audio data-key="65" src="http://carolinegabriel.com/demo/js-keyboard/sounds/040.wav"></audio>
+            <audio data-key="87" src="http://carolinegabriel.com/demo/js-keyboard/sounds/041.wav"></audio>
+            <audio data-key="83" src="http://carolinegabriel.com/demo/js-keyboard/sounds/042.wav"></audio>
+            <audio data-key="69" src="http://carolinegabriel.com/demo/js-keyboard/sounds/043.wav"></audio>
+            <audio data-key="68" src="http://carolinegabriel.com/demo/js-keyboard/sounds/044.wav"></audio>
+            <audio data-key="70" src="http://carolinegabriel.com/demo/js-keyboard/sounds/045.wav"></audio>
+            <audio data-key="84" src="http://carolinegabriel.com/demo/js-keyboard/sounds/046.wav"></audio>
+            <audio data-key="71" src="http://carolinegabriel.com/demo/js-keyboard/sounds/047.wav"></audio>
+            <audio data-key="89" src="http://carolinegabriel.com/demo/js-keyboard/sounds/048.wav"></audio>
+            <audio data-key="72" src="http://carolinegabriel.com/demo/js-keyboard/sounds/049.wav"></audio>
+            <audio data-key="85" src="http://carolinegabriel.com/demo/js-keyboard/sounds/050.wav"></audio>
+            <audio data-key="74" src="http://carolinegabriel.com/demo/js-keyboard/sounds/051.wav"></audio>
+            <audio data-key="75" src="http://carolinegabriel.com/demo/js-keyboard/sounds/052.wav"></audio>
+            <audio data-key="79" src="http://carolinegabriel.com/demo/js-keyboard/sounds/053.wav"></audio>
+            <audio data-key="76" src="http://carolinegabriel.com/demo/js-keyboard/sounds/054.wav"></audio>
+            <audio data-key="80" src="http://carolinegabriel.com/demo/js-keyboard/sounds/055.wav"></audio>
+            <audio data-key="186" src="http://carolinegabriel.com/demo/js-keyboard/sounds/056.wav"></audio>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-8">
+        <h1>Módulo 1</h1>
+        <br>
+        <div class="page-1 page atual">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/K9bNtJAbCdY" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        <div class="page-2 page" style="display: none">
+          <p class="lh-1 mb-4 mt-4">
+            É a região onde são escritas as notas na partitura. Ela é composta
+            por 5 linhas horizontais e paralelas.
+          </p>
+          <img src="../../assets/aux_conteudo/pauta.webp" />
+          <p class="lh-sm mt-4">
+            Como você pode perceber na imagem acima, existem 4 espaços entre
+            as linhas. Estes também serão utilizados para a leitura. A
+            contagem das linhas e dos espaços acontece de baixo para cima.
+          </p>
+          <p class="lh-base mt-4">
+            A figura a seguir mostra como as notas são representadas. De
+            acordo com a sua posição no pentagrama, elas serão mais graves ou
+            mais agudas.
+          </p>
+          <img src="../../assets/aux_conteudo/partitura-grave-agudo.webp" />
+          <p class="lh-lg mt-4">
+            No pentagrama podemos representar apenas 9 notas musicais (5
+            linhas e 4 espaços). Para representar notas mais agudas ou mais
+            graves, é necessário utilizar as
+            <strong>Linhas Suplementares.</strong>
+          </p>
+          <img src="../../assets/aux_conteudo/linhas-suplementares.webp" />
+          <div id="conteudo">
+            <p class="lh-1 mt-4">
+              As Linhas Suplementares (também chamadas de complementares ou
+              auxiliares) são pequenos trechos de linha que se comportam como
+              uma extensão da pauta, podendo ser adicionadas tanto para cima
+              quanto para baixo.
+            </p>
+          </div>
+        </div>
+
+        <div class="exercicio ex-1 page-3 page" style="display: none">
+          <h4 class="enunciado">O que é Pauta ou Pentagrama?</h4>
+          <div class="row alternativas alternativas-ex-1">
+            <label class="mb-2">
+              <input class="incorreta alternativa-ex-1" type="radio" name="alternativa" id="" />
+              É uma nota </label><label class="mb-2">
+              <input class="incorreta alternativa-ex-1" type="radio" name="alternativa" id="" />
+              É a duração de um som,
+            </label>
+            <label class="mb-2">
+              <input class="correta alternativa-ex-1" type="radio" name="alternativa" id="" />
+
+              É onde escrevemos a notas
+            </label>
+            <label class="mb-2">
+              <input class="incorreta alternativa-ex-1" type="radio" name="alternativa" id="" />
+              É uma propriedade musical
+            </label>
+          </div>
+
+          <button class="bt-verificar button btn btn-primary button-primary" disabled>Verificar</button>
+
+          <div class="texto-resposta" style="display: none;">
+            <label>-</label>
+          </div>
+        </div>
+
+        <div class="page-4 page" style="display: none">
+          <h4 class="mb-4 mt-4">Claves</h4>
+          <p class="lh-sm mt-4">
+            Ao utilizarmos somente o pentagrama nós temos uma representação
+            relativa das notas, ou seja, sabemos que um som é mais agudo do
+            que outro, sem, contudo, definirmos as notas. Para descobrirmos as
+            notas musicais na pauta, devemos definir pelo menos uma delas
+            através das Claves, para, então, completarmos as outras seguindo a
+            sequência: Dó – Ré – Mi – Fá – Sol – Lá – Si.
+          </p>
+          <p class="lh-base mt-4">
+            De forma resumida, as Claves indicam a nota e a linha de
+            referência a serem adotadas na pauta.
+          </p>
+          <p class="lh-lg mt-4">
+            Temos atualmente três tipos de Claves: Clave de Sol; Clave de Fá;
+            Clave de Dó.
+          </p>
+          <img src="../../assets/aux_conteudo/claves.webp" alt="" />
+          <p class="lh-1 mt-4">
+            A clave utilizada no pentagrama determinará a altura das notas
+            emitidas pelo instrumento a ser representado (graves ou agudas).
+          </p>
+          <h4 class="mb-4 mt-4">Clave de Sol</h4>
+          <p class="lh-sm mt-4">
+            Define o lugar da nota sol na segunda linha.
+          </p>
+          <img src="../../assets/aux_conteudo/clave-de-sol.webp" />
+          <h4 class="mb-4 mt-4">Clave de Fá</h4>
+          <p class="lh-base mt-4">
+            Define o lugar da nota fá na quarta linha.
+          </p>
+          <img src="../../assets/aux_conteudo/clave-de-fa.webp" alt="" />
+          <p class="lh-lg mt-4">
+            Obs.: Em alguns casos, a Clave Fá pode ser utilizada na 3ª linha.
+          </p>
+          <h4 class="mb-4 mt-4">Clave de Dó</h4>
+          <p class="lh-lg mt-4">
+            Define o lugar da nota dó na quarta ou na terceira linha.
+          </p>
+          <img src="../../assets/aux_conteudo/clave-de-do.webp" alt="" />
+        </div>
+
+        <div class="exercicio ex-2 page-5 page" style="display: none">
+          <h4 class="enunciado">qual das notas a seguir é mais aguda?</h4>
+          <br>
+          <div class="alternativas alternativas-ex-2">
+            <button class="button btn btn-outline-secondary button-secondary"
+              onclick="playAudio(`http://carolinegabriel.com/demo/js-keyboard/sounds/048.wav`);">
+              <input class="incorreta alternativa-ex-2" type="radio" name="botao-som" id="" />
+              Sol
+            </button>
+            <button class="button btn btn-outline-secondary button-secondary"
+              onclick="playAudio(`http://carolinegabriel.com/demo/js-keyboard/sounds/045.wav`);">
+              <input class="incorreta alternativa-ex-2" type="radio" name="botao-som" id="" />
+
+              Fá
+            </button>
+            <button class="button btn btn-outline-secondary button-secondary"
+              onclick="playAudio(`http://carolinegabriel.com/demo/js-keyboard/sounds/044.wav`);">
+              <input class="incorreta alternativa-ex-2" type="radio" name="botao-som" id="" />
+
+              Mi
+            </button>
+            <button class="button btn btn-outline-secondary button-secondary"
+              onclick="playAudio(`http://carolinegabriel.com/demo/js-keyboard/sounds/040.wav`);">
+              <input class="incorreta alternativa-ex-2" type="radio" name="botao-som" id="" />
+
+              Dó
+            </button>
+            <button class="button btn btn-outline-secondary button-secondary"
+              onclick="playAudio(`http://carolinegabriel.com/demo/js-keyboard/sounds/056.wav`);">
+              <input class="correta alternativa-ex-2" type="radio" name="botao-som" id="" />
+
+              Mi
+            </button>
+            <button class="button btn btn-outline-secondary button-secondary"
+              onclick="playAudio(`http://carolinegabriel.com/demo/js-keyboard/sounds/054.wav`);">
+              <input class="incorreta alternativa-ex-2" type="radio" name="botao-som" id="" />
+
+              Ré
+            </button>
+          </div>
+          <br>
+          <button class="bt-verificar button btn btn-primary button-primary" disabled>Verificar</button>
+
+          <div class="texto-resposta" style="display: none;">
+            <label>sadasd</label>
+          </div>
+        </div>
+
+        <div class="page-6 page" style="display: none">
+          <h4 class="mb-4 mt-4">
+            Veja como fica disposição das notas em cada clave:
+          </h4>
+          <img src="../../assets/aux_conteudo/clave-de-sol-notas.webp" alt="" />
+          <img src="../../assets/aux_conteudo/clave-de-fa-notas.webp" alt="" />
+          <img src="../../assets/aux_conteudo/clave-de-do-4-linha.webp" alt="" />
+          <img src="../../assets/aux_conteudo/clave-de-do-3-linha.webp" alt="" />
+          <h4 class="mb-4 mt-4">Dó Central</h4>
+          <p class="lh-lg mt-4">
+            Para se estabelecer a relação entre duas claves é necessário
+            utilizar o Dó Central, que é uma nota localizada nas duas claves.
+          </p>
+          <img src="../../assets/aux_conteudo/do-central.webp" alt="" />
+          <p class="lh-lg mt-4">
+            Conforme a imagem a seguir, podemos encontrar o Dó Central na
+            primeira linha suplementar inferior da Clave de Sol e também na
+            primeira linha suplementar superior da Clave de Fá.
+          </p>
+          <img src="../../assets/aux_conteudo/do-central-2.webp" alt="" />
+        </div>
+
+        <div class="exercicio ex-3 ex-checkbox page-7 page exercicio"  style="display: none">
+          <h4 class="enunciado">selecione as claves corretas</h4>
+          <br>
+          <div class="alternativas alternativas-ex-3">
+            <ul>
+              <li>
+                <input class="incorreta alternativa-ex-3 checkbox" type="checkbox" id="checkbox1" />
+                <label for="checkbox1"><img src="../../assets/images/exercicios/fermata.png" /></label>
               </li>
               <li>
-                <a class="nav-link text-danger" href="../pages/login.html"
-                  >Login</a
-                >
+
+                <input class="correta alternativa-ex-3 checkbox" type="checkbox" id="checkbox2" />
+                <label for="checkbox2"><img src="../../assets/images/exercicios/sol.png" /></label>
+              </li>
+              <li>
+
+                <input class="incorreta alternativa-ex-3 checkbox" type="checkbox" id="checkbox3" />
+                <label for="checkbox3"><img src="../../assets/images/exercicios/segno.png" /></label>
+              </li>
+              <li>
+
+                <input class="correta alternativa-ex-3 checkbox" type="checkbox" id="checkbox4" />
+                <label for="checkbox4"><img src="../../assets/images/exercicios/fa.png" /></label>
+              </li>
+              <li>
+
+                <input class="incorreta alternativa-ex-3 checkbox" type="checkbox" id="checkbox5" />
+                <label for="checkbox5"><img src="../../assets/images/exercicios/ritornelo.png" /></label>
+              </li>
+              <li>
+
+                <input class="correta alternativa-ex-3 checkbox" type="checkbox" id="checkbox6" />
+                <label for="checkbox6"><img src="../../assets/images/exercicios/do.png" /></label>
               </li>
             </ul>
           </div>
-        </nav>
+          <button class="bt-verificar button btn btn-primary button-primary" disabled>Verificar</button>
+          <div class="texto-resposta" style="display: none;">
+              <label>-</label>
+            </div>
+        </div>
+
+        <div class="page-8 page" style="display: none">
+          <h4 class="mb-4 mt-4">Curiosidade – Utilização das Claves</h4>
+          <p class="lh-lg mt-4">
+            A clave de Sol é utilizada para instrumentos mais agudos, enquanto
+            a clave de Fá é utilizada para instrumentos mais graves.
+          </p>
+          <p class="lh-lg mt-4">
+            A clave de Dó foi criada para representar vozes humanas em corais.
+            Porém ela passou a ser bem menos utilizada após a criação das
+            claves de Sol e de Fá.
+          </p>
+          <p class="lh-lg mt-4">
+            A Viola é um dos poucos instrumentos que ainda utilizam a clave de
+            Dó.
+          </p>
+        </div>
+      </div>
+
+      <div class="col text-center p-5">
+        <button class="bt-voltar btn btn-outline-secondary btn-lg">
+          Voltar
+        </button>
+        <button class="bt-avancar btn btn-outline-primary btn-lg">
+          Avançar
+        </button>
       </div>
     </div>
-    <!--//HEADER-->
+  </div>
 
-    <!--SLIDER-->
-    <div id="slider" class="block">
-      <div class="container pt-5">
-        <div>
-          <div class="col-lg-4 col-md-6 align-self-center mb-md-0 mb-4 row">
-            <h4 class="mb-4 mt-4">Pauta ou Pentagrama</h4>
-            <div id="main" class="p-5 teclado position-fixed col-8">
-              <div class="nowplaying"></div>
-              <div class="keys p-0 m-0">
-                <div data-key="65" class="key" data-note="C (dó)">
-                  <span class="hints">A</span>
-                </div>
-                <div data-key="87" class="key sharp" data-note="C# (dó#)">
-                  <span class="hints">W</span>
-                </div>
-                <div data-key="83" class="key" data-note="D (ré)">
-                  <span class="hints">S</span>
-                </div>
-                <div data-key="69" class="key sharp" data-note="D# (ré#)">
-                  <span class="hints">E</span>
-                </div>
-                <div data-key="68" class="key" data-note="E (mi)">
-                  <span class="hints">D</span>
-                </div>
-                <div data-key="70" class="key" data-note="F (fa)">
-                  <span class="hints">F</span>
-                </div>
-                <div data-key="84" class="key sharp" data-note="F# (fa#)">
-                  <span class="hints">T</span>
-                </div>
-                <div data-key="71" class="key" data-note="G (sol)">
-                  <span class="hints">G</span>
-                </div>
-                <div data-key="89" class="key sharp" data-note="G# (sol#)">
-                  <span class="hints">Y</span>
-                </div>
-                <div data-key="72" class="key" data-note="A (lá)">
-                  <span class="hints">H</span>
-                </div>
-                <div data-key="85" class="key sharp" data-note="A# (lá#)">
-                  <span class="hints">U</span>
-                </div>
-                <div data-key="74" class="key" data-note="B (si)">
-                  <span class="hints">J</span>
-                </div>
-                <div data-key="75" class="key" data-note="C (dó)">
-                  <span class="hints">K</span>
-                </div>
-                <div data-key="79" class="key sharp" data-note="C# (dó#)">
-                  <span class="hints">O</span>
-                </div>
-                <div data-key="76" class="key" data-note="D (ré)">
-                  <span class="hints">L</span>
-                </div>
-                <div data-key="80" class="key sharp" data-note="D# (ré#)">
-                  <span class="hints">P</span>
-                </div>
-                <div data-key="186" class="key" data-note="E (mi)">
-                  <span class="hints">Ç</span>
-                </div>
-              </div>
+  <!--//SLIDER-->
 
-              <audio
-                data-key="65"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/040.wav"
-              ></audio>
-              <audio
-                data-key="87"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/041.wav"
-              ></audio>
-              <audio
-                data-key="83"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/042.wav"
-              ></audio>
-              <audio
-                data-key="69"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/043.wav"
-              ></audio>
-              <audio
-                data-key="68"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/044.wav"
-              ></audio>
-              <audio
-                data-key="70"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/045.wav"
-              ></audio>
-              <audio
-                data-key="84"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/046.wav"
-              ></audio>
-              <audio
-                data-key="71"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/047.wav"
-              ></audio>
-              <audio
-                data-key="89"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/048.wav"
-              ></audio>
-              <audio
-                data-key="72"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/049.wav"
-              ></audio>
-              <audio
-                data-key="85"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/050.wav"
-              ></audio>
-              <audio
-                data-key="74"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/051.wav"
-              ></audio>
-              <audio
-                data-key="75"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/052.wav"
-              ></audio>
-              <audio
-                data-key="79"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/053.wav"
-              ></audio>
-              <audio
-                data-key="76"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/054.wav"
-              ></audio>
-              <audio
-                data-key="80"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/055.wav"
-              ></audio>
-              <audio
-                data-key="186"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/056.wav"
-              ></audio>
-            </div>
+  <!--FOOTER-->
+  <footer id="contato">
+    <div class="container">
+      <div class="logo py-4">
+        <div class="row">
+          <div class="col-md-6 align-self-center text-md-left text-center">
+            <img src="../../assets/images/telado.png" class="logo" width="100px" />
           </div>
-        </div>
-
-        <div class="col-8">
-          <h1>Módulo 1</h1>
-          <br>
-          <div class="page-1 atual page">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/K9bNtJAbCdY"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+          <div class="col-md-6 align-self-center text-right">
+            <ul>
+              <li>
+                <a href="#"><img src="../../assets/facebook.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../../assets/twitter.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../../assets/instagram.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../../assets/linkedin.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../../assets/youtube.svg" /></a>
+              </li>
+            </ul>
           </div>
-
-          <div class="page-2 page" style="display: none">
-            <p class="lh-1 mb-4 mt-4">
-              É a região onde são escritas as notas na partitura. Ela é composta
-              por 5 linhas horizontais e paralelas.
-            </p>
-            <img src="../../assets/aux_conteudo/pauta.webp" />
-            <p class="lh-sm mt-4">
-              Como você pode perceber na imagem acima, existem 4 espaços entre
-              as linhas. Estes também serão utilizados para a leitura. A
-              contagem das linhas e dos espaços acontece de baixo para cima.
-            </p>
-            <p class="lh-base mt-4">
-              A figura a seguir mostra como as notas são representadas. De
-              acordo com a sua posição no pentagrama, elas serão mais graves ou
-              mais agudas.
-            </p>
-            <img src="../../assets/aux_conteudo/partitura-grave-agudo.webp" />
-            <p class="lh-lg mt-4">
-              No pentagrama podemos representar apenas 9 notas musicais (5
-              linhas e 4 espaços). Para representar notas mais agudas ou mais
-              graves, é necessário utilizar as
-              <strong>Linhas Suplementares.</strong>
-            </p>
-            <img src="../../assets/aux_conteudo/linhas-suplementares.webp" />
-            <div id="conteudo">
-              <p class="lh-1 mt-4">
-                As Linhas Suplementares (também chamadas de complementares ou
-                auxiliares) são pequenos trechos de linha que se comportam como
-                uma extensão da pauta, podendo ser adicionadas tanto para cima
-                quanto para baixo.
-              </p>
-            </div>
-          </div>
-
-          <div class="exercicio ex-1 page-3 page" style="display: none">
-            <h4 class="enunciado">O que é Pauta ou Pentagrama?</h4>
-            <div class="row alternativas alternativas-ex-1">
-              <label class="mb-2">
-                <input
-                  class="incorreta alternativa-ex-1"
-                  type="radio"
-                  name="alternativa"
-                  id=""
-                />
-                É uma nota </label
-              ><label class="mb-2">
-                <input
-                  class="incorreta alternativa-ex-1"
-                  type="radio"
-                  name="alternativa"
-                  id=""
-                />
-                É a duração de um som,
-              </label>
-              <label class="mb-2">
-                <input
-                  class="correta alternativa-ex-1"
-                  type="radio"
-                  name="alternativa"
-                  id=""
-                />
-
-                É onde escrevemos a notas
-              </label>
-              <label class="mb-2">
-                <input
-                  class="incorreta alternativa-ex-1"
-                  type="radio"
-                  name="alternativa"
-                  id=""
-                />
-                É uma propriedade musical
-              </label>
-            </div>
-
-            <button class="bt-verificar button btn btn-primary button-primary" disabled>Verificar</button>
-
-            <div class="texto-resposta" style="display: none;">
-              <label>sadasd</label>
-            </div>
-          </div>
-
-          <div class="page-4 page" style="display: none">
-            <h4 class="mb-4 mt-4">Claves</h4>
-            <p class="lh-sm mt-4">
-              Ao utilizarmos somente o pentagrama nós temos uma representação
-              relativa das notas, ou seja, sabemos que um som é mais agudo do
-              que outro, sem, contudo, definirmos as notas. Para descobrirmos as
-              notas musicais na pauta, devemos definir pelo menos uma delas
-              através das Claves, para, então, completarmos as outras seguindo a
-              sequência: Dó – Ré – Mi – Fá – Sol – Lá – Si.
-            </p>
-            <p class="lh-base mt-4">
-              De forma resumida, as Claves indicam a nota e a linha de
-              referência a serem adotadas na pauta.
-            </p>
-            <p class="lh-lg mt-4">
-              Temos atualmente três tipos de Claves: Clave de Sol; Clave de Fá;
-              Clave de Dó.
-            </p>
-            <img src="../../assets/aux_conteudo/claves.webp" alt="" />
-            <p class="lh-1 mt-4">
-              A clave utilizada no pentagrama determinará a altura das notas
-              emitidas pelo instrumento a ser representado (graves ou agudas).
-            </p>
-            <h4 class="mb-4 mt-4">Clave de Sol</h4>
-            <p class="lh-sm mt-4">
-              Define o lugar da nota sol na segunda linha.
-            </p>
-            <img src="../../assets/aux_conteudo/clave-de-sol.webp" />
-            <h4 class="mb-4 mt-4">Clave de Fá</h4>
-            <p class="lh-base mt-4">
-              Define o lugar da nota fá na quarta linha.
-            </p>
-            <img src="../../assets/aux_conteudo/clave-de-fa.webp" alt="" />
-            <p class="lh-lg mt-4">
-              Obs.: Em alguns casos, a Clave Fá pode ser utilizada na 3ª linha.
-            </p>
-            <h4 class="mb-4 mt-4">Clave de Dó</h4>
-            <p class="lh-lg mt-4">
-              Define o lugar da nota dó na quarta ou na terceira linha.
-            </p>
-            <img src="../../assets/aux_conteudo/clave-de-do.webp" alt="" />
-          </div>
-
-          <div class="exercicio ex-2 page-5 page" style="display: none">
-            <h4 class="enunciado">qual das notas a seguir é mais aguda?</h4>
-            <br>
-            <div class="alternativas alternativas-ex-2">
-              <button class="button btn btn-outline-secondary button-secondary"
-                onclick="playAudio(`http://carolinegabriel.com/demo/js-keyboard/sounds/048.wav`);"
-              >
-                <input class="incorreta alternativa-ex-2" type="radio"  name="botao-som" id="" />
-                Sol
-              </button>
-              <button class="button btn btn-outline-secondary button-secondary"
-                onclick="playAudio(`http://carolinegabriel.com/demo/js-keyboard/sounds/045.wav`);"
-              >
-                <input class="incorreta alternativa-ex-2" type="radio" name="botao-som" id="" />
-
-                Fá
-              </button>
-              <button class="button btn btn-outline-secondary button-secondary"
-                onclick="playAudio(`http://carolinegabriel.com/demo/js-keyboard/sounds/044.wav`);"
-              >
-                <input class="incorreta alternativa-ex-2" type="radio" name="botao-som" id="" />
-
-                Mi
-              </button>
-              <button class="button btn btn-outline-secondary button-secondary"
-                onclick="playAudio(`http://carolinegabriel.com/demo/js-keyboard/sounds/040.wav`);"
-              >
-                <input class="incorreta alternativa-ex-2" type="radio" name="botao-som" id="" />
-
-                Dó
-              </button>
-              <button class="button btn btn-outline-secondary button-secondary"
-                onclick="playAudio(`http://carolinegabriel.com/demo/js-keyboard/sounds/056.wav`);"
-              >
-                <input class="correta alternativa-ex-2" type="radio" name="botao-som" id="" />
-
-                Mi
-              </button>
-              <button class="button btn btn-outline-secondary button-secondary"
-                onclick="playAudio(`http://carolinegabriel.com/demo/js-keyboard/sounds/054.wav`);"
-              >
-                <input class="incorreta alternativa-ex-2"type="radio" name="botao-som" id="" />
-
-                Ré
-              </button>
-            </div>
-            <br>
-            <button class="bt-verificar button btn btn-primary button-primary" disabled>Verificar</button>
-
-            <div class="texto-resposta" style="display: none;">
-              <label>sadasd</label>
-            </div>
-          </div>
-
-          <div class="page-6 page" style="display: none">
-            <h4 class="mb-4 mt-4">
-              Veja como fica disposição das notas em cada clave:
-            </h4>
-            <img
-              src="../../assets/aux_conteudo/clave-de-sol-notas.webp"
-              alt=""
-            />
-            <img
-              src="../../assets/aux_conteudo/clave-de-fa-notas.webp"
-              alt=""
-            />
-            <img
-              src="../../assets/aux_conteudo/clave-de-do-4-linha.webp"
-              alt=""
-            />
-            <img
-              src="../../assets/aux_conteudo/clave-de-do-3-linha.webp"
-              alt=""
-            />
-            <h4 class="mb-4 mt-4">Dó Central</h4>
-            <p class="lh-lg mt-4">
-              Para se estabelecer a relação entre duas claves é necessário
-              utilizar o Dó Central, que é uma nota localizada nas duas claves.
-            </p>
-            <img src="../../assets/aux_conteudo/do-central.webp" alt="" />
-            <p class="lh-lg mt-4">
-              Conforme a imagem a seguir, podemos encontrar o Dó Central na
-              primeira linha suplementar inferior da Clave de Sol e também na
-              primeira linha suplementar superior da Clave de Fá.
-            </p>
-            <img src="../../assets/aux_conteudo/do-central-2.webp" alt="" />
-          </div>
-
-          <div class="exercicio ex-3 page-2 page">
-            
-          </div>
-
-          <div class="page-8 page" style="display: none">
-            <h4 class="mb-4 mt-4">Curiosidade – Utilização das Claves</h4>
-            <p class="lh-lg mt-4">
-              A clave de Sol é utilizada para instrumentos mais agudos, enquanto
-              a clave de Fá é utilizada para instrumentos mais graves.
-            </p>
-            <p class="lh-lg mt-4">
-              A clave de Dó foi criada para representar vozes humanas em corais.
-              Porém ela passou a ser bem menos utilizada após a criação das
-              claves de Sol e de Fá.
-            </p>
-            <p class="lh-lg mt-4">
-              A Viola é um dos poucos instrumentos que ainda utilizam a clave de
-              Dó.
-            </p>
-          </div>
-        </div>
-
-        <div class="col text-center p-5">
-          <button class="bt-voltar btn btn-outline-secondary btn-lg">
-            Voltar
-          </button>
-          <button class="bt-avancar btn btn-outline-primary btn-lg">
-            Avançar
-          </button>
         </div>
       </div>
     </div>
+  </footer>
+  <!--//FOOTER-->
 
-    <!--//SLIDER-->
+  <!--JS-->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0../../umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../../js/owl.carousel.min.js"></script>
+  <script src="../../js/isotope.pkgd.min.js"></script>
+  <script src="../../js/magnify/jquery.magnific-popup.min.js"></script>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/teclado.js"></script>
+  <script src="../../js/modulos.js"></script>
+</body>
 
-    <!--FOOTER-->
-    <footer id="contato">
-      <div class="container">
-        <div class="logo py-4">
-          <div class="row">
-            <div class="col-md-6 align-self-center text-md-left text-center">
-              <img
-                src="../../assets/images/telado.png"
-                class="logo"
-                width="100px"
-              />
-            </div>
-            <div class="col-md-6 align-self-center text-right">
-              <ul>
-                <li>
-                  <a href="#"><img src="../../assets/facebook.svg"/></a>
-                </li>
-                <li>
-                  <a href="#"><img src="../../assets/twitter.svg"/></a>
-                </li>
-                <li>
-                  <a href="#"><img src="../../assets/instagram.svg"/></a>
-                </li>
-                <li>
-                  <a href="#"><img src="../../assets/linkedin.svg"/></a>
-                </li>
-                <li>
-                  <a href="#"><img src="../../assets/youtube.svg"/></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--//FOOTER-->
-
-    <!--JS-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0../../umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../../js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../../js/owl.carousel.min.js"></script>
-    <script src="../../js/isotope.pkgd.min.js"></script>
-    <script src="../../js/magnify/jquery.magnific-popup.min.js"></script>
-    <script src="../../js/main.js"></script>
-    <script src="../../js/teclado.js"></script>
-    <script src="../../js/modulos.js"></script>
-  </body>
 </html>

@@ -7,9 +7,11 @@ let btVerificarAtual = null;
 let paginas = document.querySelectorAll(".page");
 let alternativasAtual = new Array();
 let exercicios = document.querySelectorAll(".exercicio");
-let textoResposta = document.querySelector(".texto-resposta");
+let textoResposta = document.querySelectorAll(".texto-resposta");
+let textoRespostaAtual = null;
+let checkboxes = new Array();
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   verificarPagina();
 });
 
@@ -42,31 +44,84 @@ function verificarBotaoAtual() {
         }
       });
 
-      if (btVerificarAtual != undefined) {
-        btVerificarAtual.addEventListener("click", function() {
-          alternativasAtual.forEach(a => {
-            if (a.checked) {
-              textoResposta.style.display = "block";
-              a.parentElement.classList.add("selecionada");
-              if (a.classList.contains("correta")) {
-                textoResposta.textContent = "Parabéns!";
-              } else {
-                textoResposta.textContent = "Poxa!";
+      textoResposta.forEach(texto => {
+        if (texto.parentElement.classList.contains("atual")) {
+          textoRespostaAtual = texto;
+        }
+      });
+
+      if (btVerificarAtual != undefined && pagina.classList.contains("atual")) {
+        if (!btVerificarAtual.parentElement.classList.contains("ex-checkbox")) { }
+
+
+      }
+
+      if (btVerificarAtual != undefined && pagina.classList.contains("atual")) {
+
+        btVerificarAtual.addEventListener("click", function () {
+          if (!btVerificarAtual.parentElement.classList.contains("ex-checkbox")) {
+            alternativasAtual.forEach(a => {
+              if (a.checked) {
+                textoRespostaAtual.style.display = "block";
+                a.parentElement.classList.add("selecionada");
+                if (a.classList.contains("correta")) {
+                  textoRespostaAtual.textContent = "Parabéns!";
+                } else {
+                  textoRespostaAtual.textContent = "Poxa!";
+                }
               }
-            }
-            a.disabled = true;
-            btVerificarAtual.disabled = true;
-            btAvancar.disabled = false;
-            btAvancar.classList.add("btn-outline-primary");
-            btAvancar.classList.remove("desabilitado");
-            a.parentElement.parentElement.parentElement.classList.add(
-              "concluido"
-            );
+              a.disabled = true;
+              btVerificarAtual.disabled = true;
+              btAvancar.disabled = false;
+              btAvancar.classList.add("btn-outline-primary");
+              btAvancar.classList.remove("desabilitado");
+              a.parentElement.parentElement.parentElement.classList.add(
+                "concluido"
+              );
+            });
             mostrarReposta();
-          });
+
+          } else {
+            console.log("apertou");
+            
+            verificarCheckboxes();
+          }
+
         });
       }
     }
+  });
+}
+
+function verificarCheckboxes() {
+
+  let i = 0;
+
+  checkboxes.forEach(cb => {
+
+    i++;
+    if (cb.classList.contains("correta")) {
+      //quantidadeCorretas++;
+    }
+     if (cb.checked) {
+       textoRespostaAtual.style.display = "block";
+       cb.parentElement.classList.add("selecionada");
+       if (cb.classList.contains("correta")) {
+         textoRespostaAtual.textContent = "Parabéns!";
+       } else {
+         textoRespostaAtual.textContent = "Poxa!";
+       }
+     }
+    cb.disabled = true;
+    btVerificarAtual.disabled = true;
+    btAvancar.disabled = false;
+    btAvancar.classList.add("btn-outline-primary");
+    btAvancar.classList.remove("desabilitado");
+    cb.parentElement.parentElement.parentElement.parentElement.classList.add(
+      "concluido"
+    );
+
+    mostrarReposta();
   });
 }
 
@@ -80,25 +135,48 @@ function salvarAlternativas() {
       exercicio.classList.contains("atual") &&
       exercicio.classList.contains(`ex-${i}`)
     ) {
-      alternativasAtual = document.querySelectorAll(`.alternativa-ex-${i}`);
+      if (exercicio.classList.contains("ex-checkbox")) {
+        checkboxes = document.querySelectorAll(`.alternativa-ex-${i}`);
+      } else {
+        alternativasAtual = document.querySelectorAll(`.alternativa-ex-${i}`);
+      }
     }
   });
 
-  console.log(alternativasAtual);
-
   alternativasAtual.forEach(a => {
-    a.addEventListener("click", function() {
+    a.addEventListener("click", function () {
       btVerificarAtual.disabled = false;
     });
+  });
+
+
+  checkboxes.forEach(cb => {
+    cb.addEventListener("click", function () {      
+      btVerificarAtual.disabled = false;
+    })
   });
 }
 
 function mostrarReposta() {
-  alternativasAtual.forEach(a => {
-    if (a.classList.contains("correta")) {
-      a.parentElement.style.backgroundColor = "#4aed7b";
-    } else {
-      a.parentElement.style.backgroundColor = "#f04646";
+  paginas.forEach(pagina => {
+    if (pagina.classList.contains("atual")) {
+      if (!pagina.classList.contains("ex-checkbox")) {
+        alternativasAtual.forEach(a => {
+          if (a.classList.contains("correta")) {
+            a.parentElement.style.backgroundColor = "#4aed7b";
+          } else {
+            a.parentElement.style.backgroundColor = "#f04646";
+          }
+        });
+      } else {
+        checkboxes.forEach(cb => {
+          if (cb.classList.contains("correta")) {
+            cb.parentElement.style.backgroundColor = "#4aed7b";
+          } else {
+            cb.parentElement.style.backgroundColor = "#f04646";
+          }
+        });
+      }
     }
   });
 }
@@ -115,7 +193,7 @@ function verificarPagina() {
   paginas.forEach(pagina => {
     if (pagina.classList.contains("atual")) {
       if (pagina.classList.contains("exercicio") == true &&
-      !pagina.classList.contains("concluido") == true) {
+        !pagina.classList.contains("concluido") == true) {
         btAvancar.disabled = true;
         btAvancar.classList.remove("btn-outline-primary");
         btAvancar.classList.add("desabilitado");
@@ -133,7 +211,7 @@ function verificarPagina() {
   });
 }
 
-btAvancar.addEventListener("click", function() {
+btAvancar.addEventListener("click", function () {
   let verificarPag = 0;
   let cont = 0;
 
@@ -150,7 +228,7 @@ btAvancar.addEventListener("click", function() {
   verificarPagina();
 });
 
-btVoltar.addEventListener("click", function() {
+btVoltar.addEventListener("click", function () {
   let verificarPag = 0;
   let cont = 0;
 
