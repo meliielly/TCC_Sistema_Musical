@@ -96,9 +96,9 @@ function salvarAlternativas() {
 function mostrarReposta() {
   alternativasAtual.forEach(a => {
     if (a.classList.contains("correta")) {
-      a.parentElement.style.backgroundColor = "green";
+      a.parentElement.style.backgroundColor = "#4aed7b";
     } else {
-      a.parentElement.style.backgroundColor = "red";
+      a.parentElement.style.backgroundColor = "#f04646";
     }
   });
 }
