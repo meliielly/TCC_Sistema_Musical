@@ -81,9 +81,7 @@ function verificarBotaoAtual() {
             });
             mostrarReposta();
 
-          } else {
-            console.log("apertou");
-            
+          } else {            
             verificarCheckboxes();
           }
 
@@ -95,23 +93,16 @@ function verificarBotaoAtual() {
 
 function verificarCheckboxes() {
 
-  let i = 0;
+
+  let opcoesCorretas = new Array(); 
+  let opcoesIncorretas = new Array();
+  let quantidadeCorretas = 0;
 
   checkboxes.forEach(cb => {
-
-    i++;
-    if (cb.classList.contains("correta")) {
-      //quantidadeCorretas++;
+    if(cb.checked){
+      textoRespostaAtual.style.display = "block";
+      cb.parentElement.classList.add("selecionada");
     }
-     if (cb.checked) {
-       textoRespostaAtual.style.display = "block";
-       cb.parentElement.classList.add("selecionada");
-       if (cb.classList.contains("correta")) {
-         textoRespostaAtual.textContent = "Parabéns!";
-       } else {
-         textoRespostaAtual.textContent = "Poxa!";
-       }
-     }
     cb.disabled = true;
     btVerificarAtual.disabled = true;
     btAvancar.disabled = false;
@@ -120,9 +111,35 @@ function verificarCheckboxes() {
     cb.parentElement.parentElement.parentElement.parentElement.classList.add(
       "concluido"
     );
-
     mostrarReposta();
   });
+
+  calcularPontuacao();
+}
+
+function calcularPontuacao(){
+
+  let quantidadeCorretas = 0;
+  let corretas = 0;
+  let incorretas = 0;
+  
+
+  checkboxes.forEach(cb => {
+    if(cb.parentElement.classList.contains("selecionada")){
+      if(cb.classList.contains("correta")){
+        quantidadeCorretas++;
+        corretas++;
+      }else{
+        incorretas++;
+      }
+    }else{
+      if(cb.classList.contains("correta")){
+        quantidadeCorretas++;
+      }
+    }
+  });
+
+  textoRespostaAtual.innerHTML = `Você selecionou (${corretas}) opções corretas de (${quantidadeCorretas}) <br> e (${incorretas})  opções incorretas de (${checkboxes.length-quantidadeCorretas})`;
 }
 
 function salvarAlternativas() {
@@ -162,6 +179,7 @@ function mostrarReposta() {
     if (pagina.classList.contains("atual")) {
       if (!pagina.classList.contains("ex-checkbox")) {
         alternativasAtual.forEach(a => {
+          a.parentElement.style.fontWeight = "900";
           if (a.classList.contains("correta")) {
             a.parentElement.style.backgroundColor = "#4aed7b";
           } else {

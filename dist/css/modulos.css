@@ -9,7 +9,7 @@
 }
 
 .selecionada {
-    border: 3px solid black;
+    border: 2px solid black;
 }
 
 ul {
@@ -71,4 +71,9 @@ label img {
     transform: scale(0.9);
     /* box-shadow: 0 0 5px #333; */
     z-index: -1;
+}
+
+.texto-resposta {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
