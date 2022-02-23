@@ -65,9 +65,9 @@ function verificarBotaoAtual() {
                 textoRespostaAtual.style.display = "block";
                 a.parentElement.classList.add("selecionada");
                 if (a.classList.contains("correta")) {
-                  textoRespostaAtual.textContent = "Parabéns!";
+                  textoRespostaAtual.textContent = "Parabéns! Alternativa correta";
                 } else {
-                  textoRespostaAtual.textContent = "Poxa!";
+                  textoRespostaAtual.textContent = "Alternativa incorreta!";
                 }
               }
               a.disabled = true;
