@@ -47,6 +47,9 @@
             <li class="nav-item">
               <a class="nav-link" href="../sobre.html">Sobre</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../ranking.html">Ranking</a>
+            </li>
             <li>
               <a class="nav-link text-danger" href="../pages/login.html">Login</a>
             </li>
@@ -191,13 +194,14 @@
           <div class="row alternativas alternativas-ex-1">
             <label class="mb-2">
               <input class="incorreta alternativa-ex-1" type="radio" name="alternativa" id="" />
-              É uma nota </label><label class="mb-2">
+              É uma nota
+            </label>
+            <label class="mb-2">
               <input class="incorreta alternativa-ex-1" type="radio" name="alternativa" id="" />
               É a duração de um som
             </label>
             <label class="mb-2">
               <input class="correta alternativa-ex-1" type="radio" name="alternativa" id="" />
-
               É onde escrevemos a notas
             </label>
             <label class="mb-2">
@@ -377,10 +381,8 @@
             A Viola é um dos poucos instrumentos que ainda utilizam a clave de
             Dó.
           </p>
-          <div class="modal-dialog modal-dialog-centered">
-              ...
-            </div>
-            
+
+
         </div>
       </div>
 
@@ -391,6 +393,40 @@
         <button class="bt-avancar btn btn-outline-primary btn-lg">
           Avançar
         </button>
+
+        <br>
+        <br>
+        
+        <!-- Button trigger modal -->
+        <div class="col-12 text-center">
+          <button type="button" class="btn btn-primary bt-finalizar-modulo" data-toggle="modal"
+            data-target="#exampleModalCenter" style="visibility:hidden;">
+            Finalizar Módulo
+          </button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Módulo concluído</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p class="texto-final"></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="goTo('menu')">Sair</button>
+                <button type="button" class="btn btn-primary" onclick="goTo('2')">Próximo Módulo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

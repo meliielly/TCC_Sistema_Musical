@@ -12,6 +12,8 @@ let textoRespostaAtual = null;
 let checkboxes = new Array();
 let textoPontuacao = document.querySelector(".texto-pontuacao");
 let pontuacao = 0; 
+let textoFinal = document.querySelector(".texto-final");
+let btFinalizarModulo = document.querySelector(".bt-finalizar-modulo");
 
 document.addEventListener("DOMContentLoaded", function () {
   pontuacao = 0;
@@ -29,6 +31,8 @@ function verificarBotao() {
 
       if (pagina.classList.contains(`page-${paginas.length}`)) {
         btAvancar.style.visibility = "hidden";
+        btFinalizarModulo.style.visibility = "visible";
+
       } else {
         btAvancar.style.visibility = "visible";
       }
@@ -63,6 +67,7 @@ function verificarBotaoAtual() {
 
         btVerificarAtual.addEventListener("click", function () {
           if (!btVerificarAtual.parentElement.classList.contains("ex-checkbox")) {
+            
             alternativasAtual.forEach(a => {
               if (a.checked) {
                 textoRespostaAtual.style.display = "block";
@@ -147,7 +152,6 @@ function calcularPontuacao(){
       }
     }
   });
-
 
   textoRespostaAtual.innerHTML = `Você selecionou (${corretas}) opções corretas de (${quantidadeCorretas}) <br> e (${incorretas})  opções incorretas de (${checkboxes.length-quantidadeCorretas})`;
 
@@ -282,4 +286,16 @@ btVoltar.addEventListener("click", function () {
 function playAudio(link) {
   var audio = new Audio(link);
   audio.play();
+}
+
+btFinalizarModulo.addEventListener("click", function(){
+  textoFinal.innerHTML = `Sua pontuação foi de <b>${pontuacao} pontos</b>. <br> A média desse módulo é de 40 pontos!`;
+})
+
+function goTo(link){
+  if(link == 'menu'){
+    window.location.href = "../../index.html";
+  }else{
+    window.location.href = `../modulos/modulo-${link}.html`;
+  }
 }

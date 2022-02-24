@@ -1,236 +1,195 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="../../css/owl/owl.carousel.min.css" />
-    <link rel="stylesheet" href="../../css/owl/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="../../css/magnific-popup.css" />
-    <link rel="stylesheet" href="../../css/main.css" />
-    <link rel="stylesheet" href="../../css/teclado.css">
-    <link rel="stylesheet" href="../../css/modulos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
 
-    <title>Estudos Musicais</title>
-  </head>
-  <body>
-    <!--HEADER-->
-    <div id="header">
-      <div class="container">
-        <nav
-          class="navbar navbar-expand-lg navbar-light justify-content-between"
-        >
-          <a class="navbar-brand" href="#">
-            <img src="../../assets/images/telado.png" class="logo" width="50" />
-          </a>
+  <link rel="stylesheet" href="../../css/owl/owl.carousel.min.css" />
+  <link rel="stylesheet" href="../../css/owl/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="../../css/magnific-popup.css" />
+  <link rel="stylesheet" href="../../css/main.css" />
+  <link rel="stylesheet" href="../../css/teclado.css">
+  <link rel="stylesheet" href="../../css/modulos.css">
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              
-              <li class="nav-item">
-                <a class="nav-link active" href="../../index.html">Página Inicial</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="../../index.html#servicos">Módulos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../pages/teclado.html">Teclado Virtual</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../perfil.html">Perfil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../pages/links.html">Vídeos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../pages/sobre.html">Sobre</a>
-              </li>
-              <li>
-                <a class="nav-link text-danger" href="../../pages/login.html">Login</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+  <title>Estudos Musicais</title>
+</head>
+
+<body>
+  <!--HEADER-->
+  <div id="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+        <a class="navbar-brand" href="#">
+          <img src="../../assets/images/telado.png" class="logo" width="50" />
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+
+            <li class="nav-item">
+              <a class="nav-link active" href="../../index.html">Página Inicial</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html#servicos">Módulos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../pages/teclado.html">Teclado Virtual</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../perfil.html">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../pages/links.html">Vídeos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../pages/sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../ranking.html">Ranking</a>
+            </li>
+            <li>
+              <a class="nav-link text-danger" href="../../pages/login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <!--//HEADER-->
+  </div>
+  <!--//HEADER-->
 
-    <!--SLIDER-->
-   <div id="slider" class="block">
-      <div class="container pt-5">
-        <div>
-          <div class="col-lg-4 col-md-6 align-self-center mb-md-0 mb-4 row">
-            <div id="main" class=" p-5 teclado position-fixed">
-              <div class="nowplaying"></div>
-              <div class="keys p-0 m-0">
-                <div data-key="65" class="key" data-note="C (dó)">
-                  <span class="hints">A</span>
-                </div>
-                <div data-key="87" class="key sharp" data-note="C# (dó#)">
-                  <span class="hints">W</span>
-                </div>
-                <div data-key="83" class="key" data-note="D (ré)">
-                  <span class="hints">S</span>
-                </div>
-                <div data-key="69" class="key sharp" data-note="D# (ré#)">
-                  <span class="hints">E</span>
-                </div>
-                <div data-key="68" class="key" data-note="E (mi)">
-                  <span class="hints">D</span>
-                </div>
-                <div data-key="70" class="key" data-note="F (fa)">
-                  <span class="hints">F</span>
-                </div>
-                <div data-key="84" class="key sharp" data-note="F# (fa#)">
-                  <span class="hints">T</span>
-                </div>
-                <div data-key="71" class="key" data-note="G (sol)">
-                  <span class="hints">G</span>
-                </div>
-                <div data-key="89" class="key sharp" data-note="G# (sol#)">
-                  <span class="hints">Y</span>
-                </div>
-                <div data-key="72" class="key" data-note="A (lá)">
-                  <span class="hints">H</span>
-                </div>
-                <div data-key="85" class="key sharp" data-note="A# (lá#)">
-                  <span class="hints">U</span>
-                </div>
-                <div data-key="74" class="key" data-note="B (si)">
-                  <span class="hints">J</span>
-                </div>
-                <div data-key="75" class="key" data-note="C (dó)">
-                  <span class="hints">K</span>
-                </div>
-                <div data-key="79" class="key sharp" data-note="C# (dó#)">
-                  <span class="hints">O</span>
-                </div>
-                <div data-key="76" class="key" data-note="D (ré)">
-                  <span class="hints">L</span>
-                </div>
-                <div data-key="80" class="key sharp" data-note="D# (ré#)">
-                  <span class="hints">P</span>
-                </div>
-                <div data-key="186" class="key" data-note="E (mi)">
-                  <span class="hints">Ç</span>
-                </div>
+  <!--SLIDER-->
+  <div id="slider" class="block">
+    <div class="container pt-5">
+
+      <div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-md-0 mb-4 row">
+          <div id="main" class=" p-5 teclado position-fixed">
+            <br><br>
+            <div class="texto-pontuacao">Pontuação: <b>0</b></div>
+            <div class="nowplaying"></div>
+            <div class="keys p-0 m-0">
+              <div data-key="65" class="key" data-note="C (dó)">
+                <span class="hints">A</span>
               </div>
+              <div data-key="87" class="key sharp" data-note="C# (dó#)">
+                <span class="hints">W</span>
+              </div>
+              <div data-key="83" class="key" data-note="D (ré)">
+                <span class="hints">S</span>
+              </div>
+              <div data-key="69" class="key sharp" data-note="D# (ré#)">
+                <span class="hints">E</span>
+              </div>
+              <div data-key="68" class="key" data-note="E (mi)">
+                <span class="hints">D</span>
+              </div>
+              <div data-key="70" class="key" data-note="F (fa)">
+                <span class="hints">F</span>
+              </div>
+              <div data-key="84" class="key sharp" data-note="F# (fa#)">
+                <span class="hints">T</span>
+              </div>
+              <div data-key="71" class="key" data-note="G (sol)">
+                <span class="hints">G</span>
+              </div>
+              <div data-key="89" class="key sharp" data-note="G# (sol#)">
+                <span class="hints">Y</span>
+              </div>
+              <div data-key="72" class="key" data-note="A (lá)">
+                <span class="hints">H</span>
+              </div>
+              <div data-key="85" class="key sharp" data-note="A# (lá#)">
+                <span class="hints">U</span>
+              </div>
+              <div data-key="74" class="key" data-note="B (si)">
+                <span class="hints">J</span>
+              </div>
+              <div data-key="75" class="key" data-note="C (dó)">
+                <span class="hints">K</span>
+              </div>
+              <div data-key="79" class="key sharp" data-note="C# (dó#)">
+                <span class="hints">O</span>
+              </div>
+              <div data-key="76" class="key" data-note="D (ré)">
+                <span class="hints">L</span>
+              </div>
+              <div data-key="80" class="key sharp" data-note="D# (ré#)">
+                <span class="hints">P</span>
+              </div>
+              <div data-key="186" class="key" data-note="E (mi)">
+                <span class="hints">Ç</span>
+              </div>
+            </div>
 
-              <audio
-                data-key="65"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/040.wav"
-              ></audio>
-              <audio
-                data-key="87"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/041.wav"
-              ></audio>
-              <audio
-                data-key="83"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/042.wav"
-              ></audio>
-              <audio
-                data-key="69"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/043.wav"
-              ></audio>
-              <audio
-                data-key="68"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/044.wav"
-              ></audio>
-              <audio
-                data-key="70"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/045.wav"
-              ></audio>
-              <audio
-                data-key="84"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/046.wav"
-              ></audio>
-              <audio
-                data-key="71"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/047.wav"
-              ></audio>
-              <audio
-                data-key="89"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/048.wav"
-              ></audio>
-              <audio
-                data-key="72"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/049.wav"
-              ></audio>
-              <audio
-                data-key="85"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/050.wav"
-              ></audio>
-              <audio
-                data-key="74"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/051.wav"
-              ></audio>
-              <audio
-                data-key="75"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/052.wav"
-              ></audio>
-              <audio
-                data-key="79"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/053.wav"
-              ></audio>
-              <audio
-                data-key="76"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/054.wav"
-              ></audio>
-              <audio
-                data-key="80"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/055.wav"
-              ></audio>
-              <audio
-                data-key="186"
-                src="http://carolinegabriel.com/demo/js-keyboard/sounds/056.wav"
-              ></audio>
-            </div>         
+            <audio data-key="65" src="http://carolinegabriel.com/demo/js-keyboard/sounds/040.wav"></audio>
+            <audio data-key="87" src="http://carolinegabriel.com/demo/js-keyboard/sounds/041.wav"></audio>
+            <audio data-key="83" src="http://carolinegabriel.com/demo/js-keyboard/sounds/042.wav"></audio>
+            <audio data-key="69" src="http://carolinegabriel.com/demo/js-keyboard/sounds/043.wav"></audio>
+            <audio data-key="68" src="http://carolinegabriel.com/demo/js-keyboard/sounds/044.wav"></audio>
+            <audio data-key="70" src="http://carolinegabriel.com/demo/js-keyboard/sounds/045.wav"></audio>
+            <audio data-key="84" src="http://carolinegabriel.com/demo/js-keyboard/sounds/046.wav"></audio>
+            <audio data-key="71" src="http://carolinegabriel.com/demo/js-keyboard/sounds/047.wav"></audio>
+            <audio data-key="89" src="http://carolinegabriel.com/demo/js-keyboard/sounds/048.wav"></audio>
+            <audio data-key="72" src="http://carolinegabriel.com/demo/js-keyboard/sounds/049.wav"></audio>
+            <audio data-key="85" src="http://carolinegabriel.com/demo/js-keyboard/sounds/050.wav"></audio>
+            <audio data-key="74" src="http://carolinegabriel.com/demo/js-keyboard/sounds/051.wav"></audio>
+            <audio data-key="75" src="http://carolinegabriel.com/demo/js-keyboard/sounds/052.wav"></audio>
+            <audio data-key="79" src="http://carolinegabriel.com/demo/js-keyboard/sounds/053.wav"></audio>
+            <audio data-key="76" src="http://carolinegabriel.com/demo/js-keyboard/sounds/054.wav"></audio>
+            <audio data-key="80" src="http://carolinegabriel.com/demo/js-keyboard/sounds/055.wav"></audio>
+            <audio data-key="186" src="http://carolinegabriel.com/demo/js-keyboard/sounds/056.wav"></audio>
           </div>
         </div>
-        <div class="col-8">
-          <h1>Módulo 2</h1>
-          <h4 class="mb-4 mt-4">Figuras de Som e Pausas (Silêncio)</h4>
-          <div class="page page-1 atual">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dqUXzJbzb-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="page page-2">
-            <p class="lh-1  mb-4 mt-4">
-            Agora que já sabemos definir a altura das notas na pauta, iremos descobrir como definir a duração delas e suas pausas.
-            </p>
-            <p class="lh-sm mt-4">
+      </div>
+      <div class="col-8">
+        <h1>Módulo 2</h1>
+        <h4 class="mb-4 mt-4">Figuras de Som e Pausas (Silêncio)</h4>
+        <div class="page page-1 atual">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dqUXzJbzb-4" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="page page-2">
+          <p class="lh-1  mb-4 mt-4">
+            Agora que já sabemos definir a altura das notas na pauta, iremos descobrir como definir a duração delas e
+            suas pausas.
+          </p>
+          <p class="lh-sm mt-4">
             As figuras de som podem ter até três partes:
-            </p>
-            <img src="../../assets/aux_conteudo/figura-de-som-partes.webp" />
-          
-            <p class="lh-base mt-4">
-            Quando a figura está localizada na parte inferior da pauta (até a terceira linha), sua haste é posicionada para cima. Já quando a figura está localizada na parte superior da pauta (a partir da terceira linha), sua haste é posicionada para baixo. Quando a figura está localizada na terceira linha, a haste pode ser posicionada para cima ou para baixo.
-            </p>
-            <img src="../../assets/aux_conteudo/direcao_hastes.png "alt="" height="150">
-            <p class="lh-lg mt-4">
-              Na música, existem símbolos que representam os sons e o silêncio.
-            </p>
+          </p>
+          <img src="../../assets/aux_conteudo/figura-de-som-partes.webp" />
 
-          </div>
+          <p class="lh-base mt-4">
+            Quando a figura está localizada na parte inferior da pauta (até a terceira linha), sua haste é posicionada
+            para cima. Já quando a figura está localizada na parte superior da pauta (a partir da terceira linha), sua
+            haste é posicionada para baixo. Quando a figura está localizada na terceira linha, a haste pode ser
+            posicionada para cima ou para baixo.
+          </p>
+          <img src="../../assets/aux_conteudo/direcao_hastes.png " alt="" height="150">
+          <p class="lh-lg mt-4">
+            Na música, existem símbolos que representam os sons e o silêncio.
+          </p>
 
-          <div class="text-center exercicio ex-1 page-3 page" style="display: none">
-          <h4 class="enunciado">Faz parte do corpo de uma figura. Selecione a alternativa correta:</h4>
+        </div>
+
+
+        <div class="text-center exercicio ex-1 page-3 page" style="display: none">
+          <h4 class="enunciado">Faz parte do corpo de uma figura:</h4>
           <div class="row alternativas alternativas-ex-1">
             <label class="mb-2">
               <input class="incorreta alternativa-ex-1" type="radio" name="alternativa" id="" />
-              Colchetes  </label><label class="mb-2">
-              <input class="correta alternativa-ex-1" type="radio" name="alternativa" id="" />
-              Haste
+              Colchetes </label><label class="mb-2">
+              <input class="incorreta alternativa-ex-1" type="radio" name="alternativa" id="" />
+              A linha onde está escrita
             </label>
             <label class="mb-2">
-              <input class="incorreta alternativa-ex-1" type="radio" name="alternativa" id="" />
-
-              A linha onde está escrita
+              <input class="correta alternativa-ex-1" type="radio" name="alternativa" id="" />
+              Haste
             </label>
             <label class="mb-2">
               <input class="incorreta alternativa-ex-1" type="radio" name="alternativa" id="" />
@@ -245,18 +204,26 @@
           </div>
         </div>
 
+
+
         <div class="page page-4">
           <p class="lh-1 mt-4">
-          Estes símbolos nos indicam quando tocar e quando parar de tocar uma nota ou acorde.Eles também nos indicam quando não devemos tocar nada.
+            Estes símbolos nos indicam quando tocar e quando parar de tocar uma nota ou acorde.Eles também nos indicam
+            quando não devemos tocar nada.
           </p>
           <h4 class="mb-4 mt-4">De acordo com Bohumil Med (1996):</h4>
           <p class="lh-1 mt-4">
             <strong>
-                “Em música existem sons longos e sons breves. Há também momentos quando se interrompe a emissão do som: os silêncios. (…) A duração é a maior ou menor quantidade de um som. A relação entre durações do sons define o ritmo.”
+              “Em música existem sons longos e sons breves. Há também momentos quando se interrompe a emissão do som: os
+              silêncios. (…) A duração é a maior ou menor quantidade de um som. A relação entre durações do sons define
+              o ritmo.”
             </strong>
           </p>
           <p class="lh-1 mt-4">
-            Há figuras que representam a duração dos sons, assim como existem figuras que representam a duração dos silêncios (pausas). As figuras que indicam a duração dos sons também são chamadas de Valores Positivos, enquanto as que indicam a duração das pausas são chamadas de Valores Negativos. Os valores indicam uma relação proporcional entre cada figura.
+            Há figuras que representam a duração dos sons, assim como existem figuras que representam a duração dos
+            silêncios (pausas). As figuras que indicam a duração dos sons também são chamadas de Valores Positivos,
+            enquanto as que indicam a duração das pausas são chamadas de Valores Negativos. Os valores indicam uma
+            relação proporcional entre cada figura.
           </p>
           <p class="lh-1 mt-4">
             Temos sete figuras de som e de pausas. Para cada figura de som existe uma Pausa correspondente.
@@ -265,24 +232,31 @@
           <img src="../../assets/aux_conteudo/figuras-de-som-e-pausas.webp" alt="">
 
           <p class="lh-1 mt-4">
-            <strong>Semibreve:</strong> é a figura com maior duração atualmente e as demais figuras são frações dela. É representada pelo n° <strong>1</strong>.
+            <strong>Semibreve:</strong> é a figura com maior duração atualmente e as demais figuras são frações dela. É
+            representada pelo n° <strong>1</strong>.
             <br>
-            <strong>Mínima:</strong> vale metade da Semibreve. É representada pelo n° <strong>2</strong>, pois cabem 2 Mínimas em 1 Semibreve.
+            <strong>Mínima:</strong> vale metade da Semibreve. É representada pelo n° <strong>2</strong>, pois cabem 2
+            Mínimas em 1 Semibreve.
             <br>
-            <strong>Semínima:</strong> vale metade da Mínima. É representada pelo n° <strong>4</strong>, pois cabem 4 Semínimas em 1 Semibreve.
+            <strong>Semínima:</strong> vale metade da Mínima. É representada pelo n° <strong>4</strong>, pois cabem 4
+            Semínimas em 1 Semibreve.
             <br>
-            <strong>Colcheia:</strong> vale metade da Semínima. É representada pelo n° <strong>8</strong>, pois cabem 8 Colcheias em 1 Semibreve.
+            <strong>Colcheia:</strong> vale metade da Semínima. É representada pelo n° <strong>8</strong>, pois cabem 8
+            Colcheias em 1 Semibreve.
             <br>
-            <strong>Semicolcheia:</strong> vale metade da Colcheia. É representada pelo n° <strong>16</strong>, pois cabem 16 Semicolcheias em 1 Semibreve.
+            <strong>Semicolcheia:</strong> vale metade da Colcheia. É representada pelo n° <strong>16</strong>, pois
+            cabem 16 Semicolcheias em 1 Semibreve.
             <br>
-            <strong>Fusa:</strong> vale metade da Semicolcheia. É representada pelo n° <strong>32</strong>, pois cabem 32 Fusas em 1 Semibreve.
+            <strong>Fusa:</strong> vale metade da Semicolcheia. É representada pelo n° <strong>32</strong>, pois cabem
+            32 Fusas em 1 Semibreve.
             <br>
-            <strong>Semifusa:</strong> vale metade da fusa. É representada pelo n° <strong>64</strong>, pois cabem 64 Semifusas em 1 Semibreve.
+            <strong>Semifusa:</strong> vale metade da fusa. É representada pelo n° <strong>64</strong>, pois cabem 64
+            Semifusas em 1 Semibreve.
           </p>
         </div>
 
         <div class="text-center exercicio ex-2 ex-checkbox page-5 page" style="display: none">
-          <h4 class="enunciado">selecione as figuras de maior duração:</h4>
+          <h4 class="enunciado">selecione as 3 figuras de maior duração:</h4>
           <br>
           <div class="alternativas alternativas-ex-2">
             <ul>
@@ -318,102 +292,130 @@
           </div>
         </div>
 
-          <div class="page page-6">
-              <p class="lh-1 mt-4">
-              As colcheias, semicolcheias, fusas e semifusas podem ser unidas pela Barra de Ligação. Isto acontece quando há uma sucessão destas figuras de som no pentagrama. Veja a seguir alguns exemplos:
-            </p>
-            <img src="../../assets/aux_conteudo/exemplos-hastes-unidas.webp" alt="">
+        <div class="page page-6" style="display: none">
+          <p class="lh-1 mt-4">
+            As colcheias, semicolcheias, fusas e semifusas podem ser unidas pela Barra de Ligação. Isto acontece quando
+            há uma sucessão destas figuras de som no pentagrama. Veja a seguir alguns exemplos:
+          </p>
+          <img src="../../assets/aux_conteudo/exemplos-hastes-unidas.webp" alt="">
 
-            <p class="lh-1 mt-4">
-              É importante ter em mente qual é a relação proporcional entre cada uma das figuras de som e de pausa.
-            </p>
-            
-            <p class="lh-1 mt-4">
-              Podemos observar que a Semibreve é a figura que possui o maior valor de tempo em relação às outras figuras. Ela corresponde à duas Mínimas.
-            </p>
-            <p class="lh-1 mt-4">
-              A Mínima corresponde à metade de uma Semibreve e ao dobro de uma Semínima. O mesmo ocorre com a Semínima, que corresponde à metade de uma Mínima e ao dobro de uma Colcheia. O raciocínio se estende para o restante das figuras. Veja na figura a seguir.
-            </p>
+          <p class="lh-1 mt-4">
+            É importante ter em mente qual é a relação proporcional entre cada uma das figuras de som e de pausa.
+          </p>
 
-            <img src="../../assets/aux_conteudo/figuras-de-tempo-valores-proporcionais.webp" alt="">
+          <p class="lh-1 mt-4">
+            Podemos observar que a Semibreve é a figura que possui o maior valor de tempo em relação às outras figuras.
+            Ela corresponde à duas Mínimas.
+          </p>
+          <p class="lh-1 mt-4">
+            A Mínima corresponde à metade de uma Semibreve e ao dobro de uma Semínima. O mesmo ocorre com a Semínima,
+            que corresponde à metade de uma Mínima e ao dobro de uma Colcheia. O raciocínio se estende para o restante
+            das figuras. Veja na figura a seguir.
+          </p>
 
-            <h4 class="mb-4 mt-4">Acidentes e Sinais de Alteração no Pentagrama</h4>
+          <img src="../../assets/aux_conteudo/figuras-de-tempo-valores-proporcionais.webp" alt="">
 
-            <p class="lh-1 mt-4 mb-4">
-              No pentagrama, os acidentes e sinais de alteração são indicados antes da nota. Veja aseguir alguns exemplos.
-            </p>
-            <img src="../../assets/aux_conteudo/armadura_de_clave.webp " alt=""/>
-            <p class="lh-1 mt-4 mb-4">
-              Quando há mais de um acidente dentro de um mesmo compasso, o último acidente sempre vai anular o anterior.
-            </p>         
-          </div>
+          <h4 class="mb-4 mt-4">Acidentes e Sinais de Alteração no Pentagrama</h4>
+
+          <p class="lh-1 mt-4 mb-4">
+            No pentagrama, os acidentes e sinais de alteração são indicados antes da nota. Veja aseguir alguns exemplos.
+          </p>
+          <img src="../../assets/aux_conteudo/armadura_de_clave.webp " alt="" />
+          <p class="lh-1 mt-4 mb-4">
+            Quando há mais de um acidente dentro de um mesmo compasso, o último acidente sempre vai anular o anterior.
+          </p>
         </div>
-        <div class="col text-center p-5">
-            <button class="bt-voltar btn btn-outline-secondary btn-lg">Voltar</button>
-            <button class="bt-avancar btn btn-outline-primary btn-lg">Avançar</button>
-        </div>
-     
       </div>
-    </div>
-       
+
+      <div class="col text-center p-5">
+        <button class="bt-voltar btn btn-outline-secondary btn-lg">Voltar</button>
+        <button class="bt-avancar btn btn-outline-primary btn-lg">Avançar</button>
       </div>
-    </div>
-    <!--//SLIDER-->
 
-    <!--CONTEUDO-->
+      <div class="col-12 text-center">
+        <button type="button" class="btn btn-primary bt-finalizar-modulo" data-toggle="modal"
+          data-target="#exampleModalCenter" style="visibility:hidden;">
+          Finalizar Módulo
+        </button>
+      </div>
 
-    <!--CONTEUDO-->
-
-    <!--FOOTER-->
-    <footer id="contato">
-      <div class="container">
-        <div class="logo py-4">
-          <div class="row">
-            <div class="col-md-6 align-self-center text-md-left text-center">
-              <img
-                src="../../assets/images/telado.png"
-                class="logo"
-                width="100px"
-              />
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Módulo concluído</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-            <div class="col-md-6 align-self-center text-right">
-              <ul>
-                <li>
-                  <a href="#"><img src="../../assets/facebook.svg" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="../../assets/twitter.svg" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="../../assets/instagram.svg" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="../../assets/linkedin.svg" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="../../assets/youtube.svg" /></a>
-                </li>
-              </ul>
+            <div class="modal-body">
+              <p class="texto-final"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" onclick="goTo('menu')">Sair</button>
+              <button type="button" class="btn btn-primary" onclick="goTo('3')">Próximo Módulo</button>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <!--//FOOTER-->
 
-    <!--JS-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0../../umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../../js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../../js/owl.carousel.min.js"></script>
-    <script src="../../js/isotope.pkgd.min.js"></script>
-    <script src="../../js/magnify/jquery.magnific-popup.min.js"></script>
-    <script src="../../js/main.js"></script>
-    <script src="../../js/teclado.js"></script>
-    <script src="../../js/modulos.js"></script>
-  </body>
+    </div>
+  </div>
+
+  </div>
+  </div>
+  <!--//SLIDER-->
+
+  <!--CONTEUDO-->
+
+  <!--CONTEUDO-->
+
+  <!--FOOTER-->
+  <footer id="contato">
+    <div class="container">
+      <div class="logo py-4">
+        <div class="row">
+          <div class="col-md-6 align-self-center text-md-left text-center">
+            <img src="../../assets/images/telado.png" class="logo" width="100px" />
+          </div>
+          <div class="col-md-6 align-self-center text-right">
+            <ul>
+              <li>
+                <a href="#"><img src="../../assets/facebook.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../../assets/twitter.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../../assets/instagram.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../../assets/linkedin.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../../assets/youtube.svg" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--//FOOTER-->
+
+  <!--JS-->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0../../umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../../js/owl.carousel.min.js"></script>
+  <script src="../../js/isotope.pkgd.min.js"></script>
+  <script src="../../js/magnify/jquery.magnific-popup.min.js"></script>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/teclado.js"></script>
+  <script src="../../js/modulos.js"></script>
+</body>
+
 </html>
