@@ -10,8 +10,11 @@ let exercicios = document.querySelectorAll(".exercicio");
 let textoResposta = document.querySelectorAll(".texto-resposta");
 let textoRespostaAtual = null;
 let checkboxes = new Array();
+let textoPontuacao = document.querySelector(".texto-pontuacao");
+let pontuacao = 0; 
 
 document.addEventListener("DOMContentLoaded", function () {
+  pontuacao = 0;
   verificarPagina();
 });
 
@@ -66,8 +69,10 @@ function verificarBotaoAtual() {
                 a.parentElement.classList.add("selecionada");
                 if (a.classList.contains("correta")) {
                   textoRespostaAtual.textContent = "Parabéns! Alternativa correta";
+                  pontuacao = pontuacao + 20;
                 } else {
                   textoRespostaAtual.textContent = "Alternativa incorreta!";
+                  pontuacao = pontuacao - 5; 
                 }
               }
               a.disabled = true;
@@ -79,6 +84,7 @@ function verificarBotaoAtual() {
                 "concluido"
               );
             });
+            atualizarPontuacao();
             mostrarReposta();
 
           } else {            
@@ -129,8 +135,11 @@ function calcularPontuacao(){
       if(cb.classList.contains("correta")){
         quantidadeCorretas++;
         corretas++;
+        pontuacao = pontuacao + 20;
       }else{
         incorretas++;
+        pontuacao = pontuacao - 5;
+
       }
     }else{
       if(cb.classList.contains("correta")){
@@ -139,7 +148,14 @@ function calcularPontuacao(){
     }
   });
 
+
   textoRespostaAtual.innerHTML = `Você selecionou (${corretas}) opções corretas de (${quantidadeCorretas}) <br> e (${incorretas})  opções incorretas de (${checkboxes.length-quantidadeCorretas})`;
+
+  atualizarPontuacao();
+}
+
+function atualizarPontuacao(){
+  textoPontuacao.innerHTML = `Pontuação: <b>${pontuacao}</b>`; 
 }
 
 function salvarAlternativas() {
